@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: pink;
+}
+
+/* divyes */
+
+#divyes{
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+#divyes img{
+    width: 370px;
+    height: 370px;
+    z-index: 1;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+#divyes h1{
+    margin-left: 90px;
+    margin-bottom: 100px;
+    font-size: 70px;
+}
+
+#divyes #call{
+    font-size: 70px;
+    margin-left: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+#divyes #ok{
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 100px;
+    font-size: 70px;
+    font-weight: bold;
+    display: none;
+}
+
+#divyes #lno{
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 280px;
+    font-size: 50px;
+    
+}
+
+#divyes #pno{
+    position: absolute;
+    margin-left: -25%;
+    margin-top: 370px;
+    width: 500px;
+    height: 50px;
+    font-size: 40px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* divmain */
+
+#divmain{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+#divmain h1{
+    margin-bottom: 40px;
+    font-size: 70px;
+}
+
+#divmain img{
+    margin-bottom: 50px;
+}
+
+#divmain p{
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+/* divno1 */
+
+#divno1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+#divno1 img{
+    width: 298px;
+    height: 285px;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+#divno1 h1{
+    margin-bottom: 40px;
+    font-size: 70px;
+}
+
+#divno1 p{
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+/* divno2 */
+
+#divno2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+#divno2 img{
+    width: 298px;
+    height: 285px;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+#divno2 h1{
+    margin-bottom: 40px;
+    font-size: 70px;
+}
+
+#divno2 p{
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+/* divno3 */
+
+#divno3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+#divno3 img{
+    width: 298px;
+    height: 285px;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+#divno3 h1{
+    margin-bottom: 40px;
+    font-size: 70px;
+}
+
+#divno3 p{
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+/* divno4 */
+
+#divno4{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+#divno4 img{
+    width: 298px;
+    height: 285px;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+#divno4 h1{
+    margin-bottom: 40px;
+    font-size: 70px;
+}
+
+#divno4 p{
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+/* divr1 */
+
+#divr1{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: pink;
+    z-index: ;
+}
+
+#divr1 img{
+    margin-top: 50%;
+    position: absolute;
+    width: 350px;
+    
+}
+
+#divr1 p{
+    font-size: 48px;
+    margin-top: 50%;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 370px;
+}
+
+/* divr2 */
+
+#divr2{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: pink;
+    z-index: ;
+}
+
+#divr2 img{
+    margin-top: 45%;
+    margin-left: -50px;
+    position: absolute;
+    width: 390px;
+    
+}
+
+#divr2 p{
+    font-size: 48px;
+    margin-top: 50%;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 370px;
+}
+
+/* buttons */
+
+#yes1{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 11%;
+    top: 70%;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+    background: white;
+}
+
+#no1{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 70%;
+    top: 70%;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+    z-index: 9;
+    background: white;
+}
+
+#request{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 40%;
+    top: 80%;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+    display: none;
+    background: white;
+}
+
+#req1{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 40%;
+    top: 65%;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+    display: none;
+    background: #ff00b4;
+}
+
+#req2{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 40%;
+    top: 65%;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+    display: none;
+    background: #ff00b4;
+}
+
+
+/* divno4 no button */
+
+#kkr{
+    display: none;
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 70%;
+    top: 70%;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+    z-index: 9;
+    background: white;
+}
+
+    </style>
+</head>
+<body>
+    
+    <!-- Div for Yes -->
+    <div id="divyes"> 
+        <h1>I knew you love me...😘</h1>
+        <img src="bubu-bubu-dudu.gif" alt="" id="y1">
+        <img src="kakaotalk-ompangie.gif" alt="" id="y2">
+        <br>
+        <img src="bubu-dancing-dance.gif" alt="" id="y3">
+        <img src="mocha-bear-hearts.gif" alt="" id="y4">
+        <p id="call">Please call me...😘</p>
+        <div id="ok">
+            85510710XX
+        </div>
+        <p id="lno">I Don't have an number...</p>
+        <button id="pno" onclick="mobileno()">Click me for number</button>
+    </div>
+    
+    <!-- Main div  -->
+    <div id="divmain">
+        
+        <img src="cute-adorable.gif" alt="gif">
+        <h1>Do you love me...❤</h1>
+        <p>-I'm all yours, Main sirf apka hun</p>
+    </div>
+    
+    <!-- Div1 for No -->
+    <div id="divno1">
+        <img src="mochi.gif" alt="">
+        <h1>Please thing again!</h1>
+        <p>itni jaldi matt bolo</p>
+    </div>
+    
+    <!-- Div2 for No -->
+    <div id="divno2">
+        <img src="couple-forgive-me.gif" alt="">
+        <h1>Ek aur baar soch lo!</h1>
+        <p>kyu aise kar rahi ho</p>
+    </div>
+    
+    <!-- Div3 for No -->
+    <div id="divno3">
+        <img src="mochi-mochi-peach-cat-peach-cat.gif" alt="">
+        <h1>fir ek baar soch lo!!</h1>
+        <p>bhut galt baat hai yaar</p>
+    </div>
+    
+    <!-- Div4 for No -->
+    <div id="divno4">
+        <img src="peach-goma-phone.gif" alt="">
+        <h1>Baby man jao na! Kitna bhav khaogi</h1>
+        <p>bhut galt baat hai yaar</p>
+    </div>
+    
+    <!-- Div1 for request -->
+    <div id="divr1">
+        <img src="cutie-cat.gif" alt="">
+        <p>Sorry baby tumhe pareshaan kiya,<br>
+        Please gussa mat karo...!
+        <br>I'll never multithread on you...emoji
+        <br>I'm async & I would wait for you...💖</p>
+    </div>
+    
+    <!-- Div2 for request -->
+    <div id="divr2">
+        <img src="kawaii-mochi.gif" alt="">
+        <p> Acha bachi...♡</p>
+    </div>
+    
+    <!-- Buttons -->
+    <button id="yes1" onclick="anshu()">Yes</button>
+        <button id="no1" onclick="ANSHU()">No</button>
+        <button id="request" onclick="aj()">Click Me</button>
+        <button id="req1" onclick="aa()">It's ok ♡</button>
+        <button id="req2" onclick="jj()">Back</button>
+        <button id="kkr" onclick="og()">No</button>
+        
+        
+        
+        
+   <script>
+       const button = document.getElementById('kkr');
+
+let clickCount=0
+
+function anshu() {
+    
+
+document.getElementById("divyes").style.display="block";
+    document.getElementById("kkr").style.display="none";
+    document.getElementById("divmain").style.display="none";
+    document.getElementById("divno1").style.display="none";
+    document.getElementById("divno2").style.display="none";
+    document.getElementById("divno3").style.display="none";
+    document.getElementById("divno4").style.display="none";
+    document.getElementById("divr1").style.display="none";
+    document.getElementById("divr2").style.display="none";
+    document.getElementById("yes1").style.display="none";
+    document.getElementById("no1").style.display="none";
+         document.getElementById("request").style.display="none";
+         document.getElementById("req1").style.display="none";
+         document.getElementById("req2").style.display="none";
+         
+}
+
+function ANSHU() {
+    clickCount++;
+    if(clickCount===1) {
+        document.getElementById("divno1").style.display="block";
+        document.getElementById("divmain").style.display="none";
+    }else if(clickCount===2){
+    document.getElementById("divno1").style.display="none";
+        document.getElementById("divno2").style.display="block";
+        
+    }else if(clickCount===3){
+    document.getElementById("divno2").style.display="none";
+        document.getElementById("divno3").style.display="block";
+        
+        
+    }else if(clickCount===4){
+        
+     document.getElementById("request").style.display="block";
+      document.getElementById("divno3").style.display="none";
+       document.getElementById("divno4").style.display="block";
+       document.getElementById("no1").style.display="none";
+       document.getElementById("kkr").style.display="block";
+       
+    }else {
+    
+        }
+    
+}
+
+function aj() {
+    document.getElementById("divr1").style.display="block";
+    document.getElementById("divyes").style.display="none";
+    document.getElementById("divmain").style.display="none";
+    document.getElementById("divno1").style.display="none";
+    document.getElementById("divno2").style.display="none";
+    document.getElementById("divno3").style.display="none";
+    document.getElementById("divno4").style.display="none";
+
+document.getElementById("yes1").style.display="none";
+
+document.getElementById("req1").style.display="block";
+
+document.getElementById("request").style.display="none";
+
+
+    
+}
+
+function aa() {
+    document.getElementById("req1").style.display="none";
+    document.getElementById("req2").style.display="block";
+   document.getElementById("divr1").style.display="none";
+    document.getElementById("no1").style.display="none";
+        document.getElementById("divr2").style.display="block";
+        document.getElementById("kkr").style.display="none";
+        }
+        
+        function jj(){
+            
+           document.getElementById("req2").style.display="none";
+            document.getElementById("divr2").style.display="none";
+            document.getElementById("divno4").style.display="block";
+            document.getElementById("yes1").style.display="block";
+            document.getElementById("no1").style.display="block";
+            document.getElementById("request").style.display="block";
+            document.getElementById("no1").style.display="none";
+            document.getElementById("kkr").style.display="block";
+            
+        }
+        
+        function og() {
+            const maxX = window.innerWidth - button.offsetWidth;
+            const maxY = window.innerHeight - button.offsetHeight;
+             const newX = Math.floor(Math.random() * maxX);
+            const newY = Math.floor(Math.random() * maxY);
+
+            button.style.top = `${newY}px`;
+            button.style.left = `${newX}px`;
+        
+        }
+        
+        function mobileno() {
+            document.getElementById("ok").style.display="block";
+        }
+        
+  
+   </script>
+</body>
+</html>
